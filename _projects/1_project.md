@@ -66,7 +66,7 @@ The data is cited. It's provided by Motivated International Inc. It's a public d
 
 Licensing
 
-This is a public data. License is available here [link](https://ride.divvybikes.com/data-license-agreement)
+This is a public data. License is available online.
 
 Privacy
 
