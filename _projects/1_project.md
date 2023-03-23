@@ -114,7 +114,7 @@ the database based on the details of every ride.
 #    layout: page
 #    title: project
 #    description: a project with a background image
-3    img: /assets/img/12.jpg
+#    img: /assets/img/12.jpg
 #    ---
 
 <div class="row">
