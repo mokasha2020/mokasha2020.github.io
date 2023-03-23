@@ -84,6 +84,63 @@ How did you verify the data integrity?
 
 
 
+This data is assumed to be the whole population of riders in every month. It's not a sample.
+
+Therefore, I don't think we have any issues with bias or data credibility.
+
+There are 4 different types of bias that could happen when we collect a sample of data:
+
+1- Sample Bias: This is not an issue here since we are assuming we have data for the whole population. 
+
+Also, we aren't asking people to answer any surveys. There is no risk of timing bias for example.
+
+The data covers 12 months worth of rides. We are not collecting data thru certain time of the year.
+
+2- Observer Bias: This is not an issue here since we are not making observations. This data was taken from 
+
+the database based on the details of every ride.
+
+3- Interpretation Bias: This is not an issue for the raw data. We will see how it is when we analyze the data.
+
+4- Confirmation Bias: This is not issue for raw data. 
+
+
+How does it help you answer your question?
+
+By looking at the locations, times, duration of each trip, we can try to see if membership riders have certain preference and we can see how we can provide that to casual members. Still a little unclear to me at this point.
+
+Are there any problems with the data?
+
+There are some missing fields. 
+
+
+Case Study Roadmap -Process
+
+In this step, first thing I tried was to use Excel to clean the data. 
+
+While using Excel to clean, filter, add columns to the data was easy in one Excel sheet, 
+
+repeating the task with the remaining 11 sheets would be a waste of time. I could have combined
+
+all 12 sheets into one using a manual or automated process. However, the result would be a huge excel sheet
+
+that could have over 1 million row which may make processing the sheet very slow. I decided to use
+
+R to clean up the data. After all, R is a very powerful and useful tool that allows us to process huge 
+amount of data. 
+
+After deciding to use R, I went to my Posit(RStudio account on the cloud) in order to use it for this project. However, I was faced with the limited RAM memory in my free account when I started importing
+the csv files into the work space using the read_csv command.
+
+So I decided not to mess to much with Rstudio on the cloud and just use Rstudio that I installed on my laptop. Now I have all the memory in my laptop available for this project :)
+
+Now, let's dig into the code:
+
+Install the tidyverse package that will be used to clean and process the data.
+
+
+
+
 
 
 
