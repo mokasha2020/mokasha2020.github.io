@@ -61,43 +61,7 @@ The data is cited. It's provided by Motivated International Inc. It's a public d
 
 How are you addressing licensing, privacy, security, and accessibility?
 
-Licensing
 
-This is a public data. License is available online.
-
-Privacy
-
-The data doesn't contain any personally identifiable information.
-
-security
-
-The data will be secure on my personal laptop.
-
-Accessibility
-
-Data is publicly available but i also have it on my laptop.
-
-How did you verify the data’s integrity?
-
-This data is assumed to be the whole population of riders in every month. It's not a sample.
-
-Therefore, I don't think we have any issues with bias or data credibility.
-
-There are 4 different types of bias that could happen when we collect a sample of data:
-
-1- Sample Bias: This is not an issue here since we are assuming we have data for the whole population. 
-
-Also, we aren't asking people to answer any surveys. There is no risk of timing bias for example.
-
-The data covers 12 months worth of rides. We are not collecting data thru certain time of the year.
-
-2- Observer Bias: This is not an issue here since we are not making observations. This data was taken from 
-
-the database based on the details of every ride.
-
-3- Interpretation Bias: This is not an issue for the raw data. We will see how it is when we analyze the data.
-
-4- Confirmation Bias: This is not issue for raw data.
 
 
 
