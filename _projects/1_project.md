@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Project 1
+description: Google Data Analytics Bike sharing Capstone Project 2023
+img: assets/img/Bikesharing.jpg
 importance: 1
 category: work
 ---
