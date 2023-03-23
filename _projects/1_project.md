@@ -77,7 +77,7 @@ Accessibility
 
 Data is publicly available but i also have it on my laptop.
 
-How did you verify the data’s integrity?
+How did you verify the data integrity?
 
 
 
