@@ -136,9 +136,9 @@ Now, let's dig into the code:
 
 Install the tidyverse package that will be used to clean and process the data.
 
-```{r}
-install.packages('tidyverse')
-```
+#```{r}
+#install.packages('tidyverse')
+#```
 
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
