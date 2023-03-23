@@ -61,7 +61,23 @@ The data is cited. It's provided by Motivated International Inc. It's a public d
 
 How are you addressing licensing, privacy, security, and accessibility?
 
+Licensing
 
+This is a public data. License is available online.
+
+Privacy
+
+The data doesn't contain any personally identifiable information.
+
+security
+
+The data will be secure on my personal laptop.
+
+Accessibility
+
+Data is publicly available but i also have it on my laptop.
+
+How did you verify the data’s integrity?
 
 
 
