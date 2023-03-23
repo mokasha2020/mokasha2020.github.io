@@ -59,7 +59,7 @@ C(Cited)
 
 The data is cited. It's provided by Motivated International Inc. It's a public data.
 
-*How are you addressing licensing, privacy, security, and accessibility?*
+#*How are you addressing licensing, privacy, security, and accessibility?*
 
 Licensing
 
