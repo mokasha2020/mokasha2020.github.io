@@ -8,6 +8,7 @@ category: work
 ---
 
 This is a WORK IN PROGRESS- NOT COMPLETE- TEST
+
 Case Study: How Does a Bike-Share Navigate Speedy Success?
 
 
