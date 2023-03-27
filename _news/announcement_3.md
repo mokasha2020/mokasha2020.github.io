@@ -1,3 +1,11 @@
+---
+layout: post
+date: 2023-01-15 15:59:00-0400
+inline: true
+---
+
+Received Google Data Analytics Certification from Google.
+
 [//]: #---
 [//]: #layout: post
 [//]: #title: A long announcement with details
@@ -29,12 +37,3 @@
 [//]: #> —Anais Nin
 
 [//]: #Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
-
-
----
-layout: post
-date: 2023-01-15 15:59:00-0400
-inline: true
----
-
-Received Google Data Analytics Certification from Google.
