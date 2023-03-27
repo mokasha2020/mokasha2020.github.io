@@ -26,7 +26,7 @@ social: true  # includes social icons at the bottom of the page
 
 
 
-I am a self-employed Controls Engineer with over 11 years experience in Indsutrial Automation and Material Handling Industry. My experience is centered around PLC and HMI
+I am a self-employed Controls Engineer with over 11 years experience in Industrial Automation and Material Handling Industry. My experience is centered around PLC and HMI
 Programming using different platforms such as Rockwell Automation and Schneider Electric software and hardware products. I also have long experience with systems integration, 
 safety systems, control panel design using CAD software packages. 
 
