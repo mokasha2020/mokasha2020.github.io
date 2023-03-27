@@ -1,4 +1,4 @@
----
+﻿---
 layout: about
 title: about
 permalink: /
@@ -24,3 +24,26 @@ social: true  # includes social icons at the bottom of the page
 
 [//]: #Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 
+
+
+I am a self-employed Controls Engineer with over 11 years experience in Indsutrial Automation and Material Handling Industry. My experience is centered around PLC and HMI
+Programming using different platforms such as Rockwell Automation and Schneider Electric software and hardware products. I also have long experience with systems integration, 
+safety systems, control panel design using CAD software packages. 
+
+I have Bachelors and Masters degrees in Engineering. 
+
+I am also skilled in Project Management and Engineering Management. 
+
+I'm currently looking for a Software role with focus on AI/Machine Learning/Data Analysis. I have skills in SQL, Tableau, and Python. 
+
+I'm transitioning careers to become a Software Engineer. I have experience with analyzing and cleaning data using SQL, R scripting, along with creating data visualizations in Tableau. 
+
+I have recently completed Machine Learning Specialization from DeepLearning.AI / Stanford University and Google Data Analytics Certification. ​
+
+> I'm currently improving my skills in:
+
+* Python. 
+
+* Data Science.
+
+* SQL.​
