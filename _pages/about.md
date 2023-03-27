@@ -6,7 +6,7 @@ subtitle: San Diego, CA. Never give up!
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: idea.jpg
   image_circular: false # crops the image to make it circular
   [//]: #address: >
     [//]: #<p> 555 your office number</p>
