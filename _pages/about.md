@@ -42,8 +42,6 @@ I have recently completed Machine Learning Specialization from DeepLearning.AI /
 
 > I'm currently improving my skills in:
 
-* Python. 
+* Machine Learning Applications using Python.
 
-* Data Science.
-
-* SQL.​
+* Data Science and SQL.
