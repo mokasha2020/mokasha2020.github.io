@@ -2,15 +2,17 @@
 layout: default
 ---
 <!-- page.html -->
-        <div class="post">
+<div class="post">
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-description">{{ page.description }}</p>
-          </header>
+    classes: wide
 
-          <article>
-            {{ content }}
-          </article>
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-description">{{ page.description }}</p>
+    </header>
 
-        </div>
+    <article>
+        {{ content }}
+    </article>
+
+</div>

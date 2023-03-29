@@ -10,8 +10,6 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div class="publications">
 
-classes: wide
-
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
   Krauss, R., & Okasha, M. (2013, June). Discrete-Time Transfer Matrix Modeling of Flexible
