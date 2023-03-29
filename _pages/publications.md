@@ -12,7 +12,7 @@ nav_order: 1
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  Krauss, R., & Okasha, M. (2013, June). Discrete-Time Transfer Matrix Modeling of Flexible Robots under Feedback Control.
+  Krauss, R., & Okasha, M. Discrete-Time Transfer Matrix Modeling of Flexible Robots under Feedback Control.
   American Control Conference (ACC)in Washington D.C., 2013 (pp. 4104-4109). IEEE.
 
 {% endfor %}
