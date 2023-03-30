@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: San Diego, CA. Never give up!
+#subtitle: San Diego, CA. Never give up!
+subtitle: ********Heads up! Website is under construction!!********
 
 profile:
   align: right
