@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Mohamed Okasha
-    - name: Date of Birth
-      value: 14th March 0000
+    #- name: Date of Birth
+    #  value: 14th March 0000
     - name: Languages
       value: English, Arabic and some German. 
 
@@ -16,35 +16,40 @@
       year: 2012
       description:
         - Master of Science in Mechanical Engineering (Controls Specialization)
-        - Thesis Title ":" Discrete Time Transfer Matrix Method for Control Design of Flexible Robots
-        - Major coursework ":" Automatic Control, Mechatronics, LabView, Python and Numerical Analysis
+        - Thesis Title "Discrete Time Transfer Matrix Method for Control Design of Flexible Robots"
+        - Major coursework "Automatic Control, Mechatronics, LabView, Python and Numerical Analysis"
     - title: Master of Engineering
       institution: The American University in Cairo, Egypt
       year: 2010
       description:
         - Master of Engineering in Product Development and Systems Management
         - Completed 27 credit hours
-        - Major coursework ":" Total Quality Management (TQM), and Advanced Statistics
+        - Major coursework "Total Quality Management (TQM), and Advanced Statistics" 
     - title: Bachelor of Science 
-      institution: Ain Shams Univeristy
+      institution: Ain Shams Univeristy, Egypt
       year: 2007
       description:
-        - Senior Project":" Limited Slip Differential (Automotive project)
-        - Major coursework ":" Computer Architecture, Digital Design, Modeling and Simulation, Vibration, Robotics, Hydraulics and Pneumatics, Image Processing, and Engineering Management.  
+        - Senior Project"Limited Slip Differential (Automotive project)" 
+        - Major coursework "Computer Architecture, Digital Design, Modeling and Simulation, Vibration, Robotics, Hydraulics and Pneumatics, Image Processing, and Engineering Management"  
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Software Controls Engineer
+      institution: FastLogix Automation
+      year: 2021 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Developing PLC/HMI code for industrial applications such as conveyor systems and Print-And-Apply systems
+        - Using Python Numpy, Pandas, Matplotlib, Seaborn libraries to read data and generate visualization charts
+        - Integrating Modicon M580 and Rockwell Automation PLCs with Cognex Scan Tunnels
+        - Commissioning various VFD applications including Schneider Altivar
+        - Building HMI applications using Vijeo and FactoryTalk View Studio and ME
+        - Supporting Software integration and Customer Acceptance Testing
+        - Converting PLC code from IEC61131-3 to IEC 61499 using EcoStruxure Automation Expert by Schneider Electric
+        #- title: Description 3.
+         # contents:
+          #  - Sub-description 1.
+           # - Sub-description 2.
     - title: Visiting Professor
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933
