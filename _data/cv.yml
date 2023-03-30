@@ -50,13 +50,15 @@
          # contents:
           #  - Sub-description 1.
            # - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Engineering Manager
+      institution: Vanderlande
+      year: 2020-2021
       description:
-        - Description 1.
-        - Description 2.
-
+        - Line Management responsibility of a small team of Engineers
+        - Managing System design from mechanical, hardware, system and network design, software development (PLC and/or PC related systems), electrical installation, integration of different components, system commissioning and testing through to final handover to the customer in large airport projects in the US and Mexico
+        - Managing requirements, integration, configuration, and software changes throughout the projects
+        - Monitoring and controlling project budget
+        - Executing the health and safety analysis and responsible for the safety coordination during the engineering phase
     - title: Director
       institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
       year: 1917-1933
