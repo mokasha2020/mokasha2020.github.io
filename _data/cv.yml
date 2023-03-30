@@ -11,23 +11,26 @@
 - title: Education
   type: time_table
   contents:
-    - title: Msc
-      institution: Southern Illinois University Edwardsville
+    - title: Master of Science
+      institution: Southern Illinois University Edwardsville, USA
       year: 2012
       description:
         - Master of Science in Mechanical Engineering (Controls Specialization)
-        - Thesis Title: Discrete Time Transfer Matrix Method for Control Design of Flexible Robots
-        - Major coursework: Automatic Control, Mechatronics, LabView, Python and Numerical Analysis
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Thesis Title ":" Discrete Time Transfer Matrix Method for Control Design of Flexible Robots
+        - Major coursework ":" Automatic Control, Mechatronics, LabView, Python and Numerical Analysis
+    - title: Master of Engineering
+      institution: The American University in Cairo, Egypt
+      year: 2010
       description:
-        - Description 1.
-        - Description 2.
+        - Master of Engineering in Product Development and Systems Management
+        - Completed 27 credit hours
+        - Major coursework ":" Total Quality Management (TQM), and Advanced Statistics
+    - title: Bachelor of Science 
+      institution: Ain Shams Univeristy
+      year: 2007
+      description:
+        - Senior Project":" Limited Slip Differential (Automotive project)
+        - Major coursework ":" Computer Architecture, Digital Design, Modeling and Simulation, Vibration, Robotics, Hydraulics and Pneumatics, Image Processing, and Engineering Management.  
 
 - title: Experience
   type: time_table
