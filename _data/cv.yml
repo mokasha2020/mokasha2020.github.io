@@ -73,45 +73,45 @@
       institution: Diversified Automation Inc, USA
       year: 2017 - 2019
       description:
-    - Leading design teams on multiple UPS automation projects
-    - Overseeing PLC code development efforts 
-    - Ensuring meeting customer expectations and specifications
-    - Managing engineering efforts and commissioning teams on job sites and providing technical support to site leads and commissioning Engineers
-    - Communicating with Project Managers to bridge the gap between Operations Management and Engineering Department
+        - Leading design teams on multiple UPS automation projects
+        - Overseeing PLC code development efforts 
+        - Ensuring meeting customer expectations and specifications
+        - Managing engineering efforts and commissioning teams on job sites and providing technical support to site leads and commissioning Engineers
+        - Communicating with Project Managers to bridge the gap between Operations Management and Engineering Department
 
     - title: Senior Controls Engineer 
       institution: Diversified Automation Inc, USA
       year: 2015 - 2017
       description:
-    - Designed and Commissioned PLC control systems for UPS and FedEx projects that include Shoe sorters, Tilt tray sorters, and cross-belt sorters 
-    - Worked with many Sortation equipment from prominent equipment manufacturers that include Vanderlande, Intelligrated, Dematic, and Hytrol
-    - Developed hardware design drawings using AutoCAD for FedEx Ground and UPS projects
+        - Designed and Commissioned PLC control systems for UPS and FedEx projects that include Shoe sorters, Tilt tray sorters, and cross-belt sorters 
+        - Worked with many Sortation equipment from prominent equipment manufacturers that include Vanderlande, Intelligrated, Dematic, and Hytrol
+        - Developed hardware design drawings using AutoCAD for FedEx Ground and UPS projects
 
 
     - title: Controls Engineer 
       institution: Alliant Technologies LLC, USA 
       year: 2012 - 2015
       description:
-    - Developed and implemented different control strategies for Material Handling systems applications for FedEx
-    - Engineered PLC control systems using Rockwell software package and Allen Bradley platform
-    - Designed Human Machine Interface (HMI) using Proface and Wonderware software
-    - Used different industrial networks such as Ethernet/IP, ControlNet, DeviceNet, and Profibus
-    - Worked with different VFDs such as PowerFlex, Siemens, Fuji, Schneider Electric Altivar, and GE
-    - Programmed and commissioned sortation systems and integrated them with other systems including SICK camera tunnels and OCS scales
-    - Delivered training and support for operators and personnel in the field and authored technical documentation
+        - Developed and implemented different control strategies for Material Handling systems applications for FedEx
+        - Engineered PLC control systems using Rockwell software package and Allen Bradley platform
+        - Designed Human Machine Interface (HMI) using Proface and Wonderware software
+        - Used different industrial networks such as Ethernet/IP, ControlNet, DeviceNet, and Profibus
+        - Worked with different VFDs such as PowerFlex, Siemens, Fuji, Schneider Electric Altivar, and GE
+        - Programmed and commissioned sortation systems and integrated them with other systems including SICK camera tunnels and OCS scales
+        - Delivered training and support for operators and personnel in the field and authored technical documentation
 
     - title: Graduate Assistant
       institution: Southern Illinois University Edwardsville, USA 
       year: 2010 - 2012
       description:
-    - Taught “Introduction to MATLAB” class (ME 354) to senior students and graded reports for several classes
+        - Taught “Introduction to MATLAB” class (ME 354) to senior students and graded reports for several classes
 
     - title: Lab Engineer
       institution: The American University in Cairo, Egypt
       year: 2007 - 2010
       description:
-    - Supervised Automatic Control and Advanced Manufacturing labs
-    - Designed tutorial materials and experiments for Advanced Manufacturing class using different equipment such as FESTO Didactic kits, Wire Electric Discharge machine, Sherline tabletop CNC and EMCO Turn250 CNC machines, and laser cutting machines
+        - Supervised Automatic Control and Advanced Manufacturing labs
+        - Designed tutorial materials and experiments for Advanced Manufacturing class using different equipment such as FESTO Didactic kits, Wire Electric Discharge machine, Sherline tabletop CNC and EMCO Turn250 CNC machines, and laser cutting machines
 
 #- title: Open Source Projects
 #  type: time_table
