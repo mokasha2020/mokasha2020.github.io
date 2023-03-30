@@ -29,14 +29,14 @@
       institution: Ain Shams Univeristy, Egypt
       year: 2007
       description:
-        - Senior Project"Limited Slip Differential (Automotive project)" 
+        - Senior Project "Limited Slip Differential (Automotive project)" 
         - Major coursework "Computer Architecture, Digital Design, Modeling and Simulation, Vibration, Robotics, Hydraulics and Pneumatics, Image Processing, and Engineering Management"  
 
 - title: Experience
   type: time_table
   contents:
     - title: Software Controls Engineer
-      institution: FastLogix Automation
+      institution: FastLogix Automation, USA
       year: 2021 - Present
       description:
         - Developing PLC/HMI code for industrial applications such as conveyor systems and Print-And-Apply systems
@@ -51,7 +51,7 @@
           #  - Sub-description 1.
            # - Sub-description 2.
     - title: Engineering Manager
-      institution: Vanderlande
+      institution: Vanderlande, USA
       year: 2020-2021
       description:
         - Line Management responsibility of a small team of Engineers
@@ -59,50 +59,115 @@
         - Managing requirements, integration, configuration, and software changes throughout the projects
         - Monitoring and controlling project budget
         - Executing the health and safety analysis and responsible for the safety coordination during the engineering phase
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: PLC/HMI Development Manager
+      institution: Diversified Automation Inc, USA
+      year: 2019-2020
       description:
+        - Managing different software development teams on multiple UPS and FedEx automation projects
+        - Assigning tasks to team members and continuously checking their progress through regular team meetings
+        - Working with the executive team on a regular basis to ensure project execution is going according to the plan
+        - Performing annual reviews for the team
+        - Resolving any staffing or team issues that arise through the course of the project
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Project Engineer 
+      institution: Diversified Automation Inc, USA
+      year: 2017 - 2019
+      description:
+    - Leading design teams on multiple UPS automation projects
+    - Overseeing PLC code development efforts 
+    - Ensuring meeting customer expectations and specifications
+    - Managing engineering efforts and commissioning teams on job sites and providing technical support to site leads and commissioning Engineers
+    - Communicating with Project Managers to bridge the gap between Operations Management and Engineering Department
 
-- title: Open Source Projects
+    - title: Senior Controls Engineer 
+      institution: Diversified Automation Inc, USA
+      year: 2015 - 2017
+      description:
+    - Designed and Commissioned PLC control systems for UPS and FedEx projects that include Shoe sorters, Tilt tray sorters, and cross-belt sorters 
+    - Worked with many Sortation equipment from prominent equipment manufacturers that include Vanderlande, Intelligrated, Dematic, and Hytrol
+    - Developed hardware design drawings using AutoCAD for FedEx Ground and UPS projects
+
+
+    - title: Controls Engineer 
+      institution: Alliant Technologies LLC, USA 
+      year: 2012 - 2015
+      description:
+    - Developed and implemented different control strategies for Material Handling systems applications for FedEx
+    - Engineered PLC control systems using Rockwell software package and Allen Bradley platform
+    - Designed Human Machine Interface (HMI) using Proface and Wonderware software
+    - Used different industrial networks such as Ethernet/IP, ControlNet, DeviceNet, and Profibus
+    - Worked with different VFDs such as PowerFlex, Siemens, Fuji, Schneider Electric Altivar, and GE
+    - Programmed and commissioned sortation systems and integrated them with other systems including SICK camera tunnels and OCS scales
+    - Delivered training and support for operators and personnel in the field and authored technical documentation
+
+    - title: Graduate Assistant
+      institution: Southern Illinois University Edwardsville, USA 
+      year: 2010 - 2012
+      description:
+    - Taught “Introduction to MATLAB” class (ME 354) to senior students and graded reports for several classes
+
+    - title: Lab Engineer
+      institution: The American University in Cairo, Egypt
+      year: 2007 - 2010
+      description:
+    - Supervised Automatic Control and Advanced Manufacturing labs
+    - Designed tutorial materials and experiments for Advanced Manufacturing class using different equipment such as FESTO Didactic kits, Wire Electric Discharge machine, Sherline tabletop CNC and EMCO Turn250 CNC machines, and laser cutting machines
+
+#- title: Open Source Projects
+#  type: time_table
+#  contents:
+#    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#      year: 2015-now
+#      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Certifications and Courses
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - year: 2023
+      items: 
+        - Google Data Analytics Professional Certificate 
+    - year: 2022
+      items: 
+        - Python for Data Science and Machine Learning Bootcamp Certification
+        - Machine Learning Specialization Certificate by Stanford University & DeepLearning.AI
+        - Complete Python Bootcamp Certification
+    - year: 2021
+      items: 
+        - The Ultimate MySQL Bootcamp Certification
+    - year: 2015
+      items: 
+        - Certified Associate in Project Management (CAPM) from PMI
+    - year: 2013
+      items: 
+        - Engineer in Training (EIT/FE) from NCESS in the State of Kentucky 
 
-- title: Honors and Awards
+
+
+        
+
+#- title: Academic Interests
+#  type: nested_list
+#  contents:
+#    - title: Topic 1.
+#      items: 
+#        - Description 1.
+#        - Description 2.
+#    - title: Topic 2.
+#      items:
+#        - Description 1.
+#        - Description 2.
+
+- title: Volunteering
   type: time_table
   contents:
-    - year: 1921
+    - year: 2022- Present
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - Mentor at DeepLearning.AI
+        - Volunteer at San Diego Model Railroad Museum Library
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+
+#- title: Volunteering
+#  type: list
+#  contents:
+#    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
