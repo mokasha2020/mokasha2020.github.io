@@ -2,7 +2,7 @@
 layout: page
 title: Project 1
 description: Google Data Analytics Bike sharing Capstone Project 2023
-img: assets/img/Bikesharing.JPG
+img: assets/img/Bike.jpg
 importance: 1
 category: work
 ---
