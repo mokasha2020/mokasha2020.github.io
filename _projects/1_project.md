@@ -9,7 +9,7 @@ category: work
 
 This is a WORK IN PROGRESS- NOT COMPLETE- TEST
 
-## Case Study: How Does a Bike-Share Navigate Speedy Success?
+### Case Study: How Does a Bike-Share Navigate Speedy Success?
 
 
 Business task:We are to design a marketing strategy to convert casual bike
