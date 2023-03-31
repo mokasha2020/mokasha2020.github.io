@@ -27,14 +27,14 @@ This is the question we need to answer.
 
 ---
 
-> #### Case Study Roadmap -Prepare
+> #### **Case Study Roadmap -Prepare**
 
 The data is located on my laptop. I downloaded it from the given link in the project document from Google.
 The data is organized by months. Every month worth of data is in its own 
 Excel sheet file. There are a total of 12 Excel sheets for 2022.
 
 
-##### Are there issues with bias or credibility in this data?
+##### **Are there issues with bias or credibility in this data?**
 
 Data should adhere to the ROCCC principle:
 
@@ -64,7 +64,7 @@ The data is current. We are analyzing the last 12 months of data from Jan 2022 t
 
 The data is cited. It's provided by Motivated International Inc. It's a public data.
 
-##### How are you addressing licensing, privacy, security, and accessibility?
+##### **How are you addressing licensing, privacy, security, and accessibility?**
 
 *Licensing*
 
@@ -82,7 +82,7 @@ The data will be secure on my personal laptop.
 
 Data is publicly available but i also have it on my laptop.
 
-##### How did you verify the data integrity?
+##### **How did you verify the data integrity?**
 
 
 This data is assumed to be the whole population of riders in every month. It's not a sample.
@@ -105,7 +105,7 @@ the database based on the details of every ride.
 
 4- Confirmation Bias: This is not issue for raw data. 
 
-##### How does it help you answer your question?
+##### **How does it help you answer your question?**
 
 By looking at the locations, times, duration of each trip, we can try to see if membership riders have certain preference and we can see how we can provide that to casual members. Still a little unclear to me at this point.
 
@@ -115,7 +115,7 @@ There are some missing fields.
 
 ---
 
-> #### Case Study Roadmap -Process
+> #### **Case Study Roadmap -Process**
 
 In this step, first thing I tried was to use Excel to clean the data. 
 
