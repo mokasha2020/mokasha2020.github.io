@@ -143,46 +143,92 @@ Install the tidyverse package that will be used to clean and process the data.
 install.packages('tidyverse')
 ```
 
+Load the library into the memory space
+
+```{r}
+library(tidyverse)
+```
+
+Use a read_csv command to import the data into individual data frame.
+
+```{r}
+
+df_jan22<-read_csv("202201-divvy-tripdata.csv") 
+df_feb22<-read_csv("202202-divvy-tripdata.csv")
+df_mar22<-read_csv("202203-divvy-tripdata.csv") 
+df_apr22<-read_csv("202204-divvy-tripdata.csv")
+df_may22<-read_csv("202205-divvy-tripdata.csv") 
+df_jun22<-read_csv("202206-divvy-tripdata.csv") 
+df_jul22<-read_csv("202207-divvy-tripdata.csv") 
+df_aug22<-read_csv("202208-divvy-tripdata.csv") 
+df_sep22<-read_csv("202209-divvy-publictripdata.csv") 
+df_oct22<-read_csv("202210-divvy-tripdata.csv") 
+df_nov22<-read_csv("202211-divvy-tripdata.csv") 
+df_dec22<-read_csv("202212-divvy-tripdata.csv")
+
+```
+
+At this point, we have 12 different data frames. We need to combine these data frames into one to make it easy for processing. 
+
+Before we do so, we should inspect the column names to make sure that that they are identical across all data frames and that we have the same number of columns. 
+
+Use the command below as an example to print out the columns name of each dataframe to for comparison.
+
+```{r}
+colnames(df_jan22)
+```
+
+After checking all 12 data frames, all column names are the same.
+
+Next, we need to inspect the column types and make sure they are all of the same type.
+
+Run this command on each dataframe:
+
+```{r}
+str(df_jan22)
+```
+
+Upon inspecting columns data on each data frame, you can quickly see that  in df_jan22, the started_at and ended_at columns are not in the standard DateTime format (POSIXct format).
 
 
 
 
 
-#To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+[//]: # To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-#    ---
-#    layout: page
-#    title: project
-#    description: a project with a background image
-#    img: /assets/img/12.jpg
-#    ---
+[//]: #   ---
+[//]: #  layout: page
+[//]: #  title: project
+[//]: #  description: a project with a background image
+[//]: #   img: /assets/img/12.jpg
+[//]: #   ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+[//]: #<div class="row">
+[//]: #    <div class="col-sm mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: #    <div class="col-sm mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: #    <div class="col-sm mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: #</div>
+[//]: #<div class="caption">
+[//]: #    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+[//]: #</div>
+[//]: #<div class="row">
+[//]: #    <div class="col-sm mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: #</div>
+[//]: #<div class="caption">
+[//]: #    This image can also have a caption. It's like magic.
+[//]: #</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+[//]: #You can also put regular text between your rows of images.
+[//]: #Say you wanted to write a little bit about your project before you posted the rest of the images.
+[//]: #You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
 
 
 <div class="row justify-content-sm-center">
