@@ -9,6 +9,8 @@ category: work
 
 ## **This is a WORK IN PROGRESS- NOT COMPLETE**
 
+---
+
 ### Case Study: How Does a Bike-Share Navigate Speedy Success?
 
 
@@ -22,6 +24,8 @@ In this study, we need to understand how casual riders differ from membership
 riders and how to use that knowledge to influence them to be annual members. 
 
 This is the question we need to answer.
+
+---
 
 > #### Case Study Roadmap -Prepare
 
@@ -108,6 +112,8 @@ By looking at the locations, times, duration of each trip, we can try to see if 
 *Are there any problems with the data?*
 
 There are some missing fields. 
+
+---
 
 > #### Case Study Roadmap -Process
 
