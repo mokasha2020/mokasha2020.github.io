@@ -7,7 +7,7 @@ importance: 1
 category: work
 ---
 
-This is a WORK IN PROGRESS- NOT COMPLETE- TEST
+## **This is a WORK IN PROGRESS- NOT COMPLETE**
 
 ### Case Study: How Does a Bike-Share Navigate Speedy Success?
 
@@ -23,7 +23,7 @@ riders and how to use that knowledge to influence them to be annual members.
 
 This is the question we need to answer.
 
-#### Case Study Roadmap -Prepare
+> #### Case Study Roadmap -Prepare
 
 The data is located on my laptop. I downloaded it from the given link in the project document from Google.
 The data is organized by months. Every month worth of data is in its own 
@@ -109,7 +109,7 @@ By looking at the locations, times, duration of each trip, we can try to see if 
 
 There are some missing fields. 
 
-#### Case Study Roadmap -Process
+> #### Case Study Roadmap -Process
 
 In this step, first thing I tried was to use Excel to clean the data. 
 
