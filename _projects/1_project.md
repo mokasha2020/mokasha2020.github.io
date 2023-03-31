@@ -12,7 +12,7 @@ This is a WORK IN PROGRESS- NOT COMPLETE- TEST
 ### Case Study: How Does a Bike-Share Navigate Speedy Success?
 
 
-Business task:We are to design a marketing strategy to convert casual bike
+Business task: We are to design a marketing strategy to convert casual bike
 riders to annual members.
 
 The finance analysts determined that it's more profitable for the company to
@@ -23,18 +23,18 @@ riders and how to use that knowledge to influence them to be annual members.
 
 This is the question we need to answer.
 
-Case Study Roadmap -Prepare
+#### Case Study Roadmap -Prepare
 
 The data is located on my laptop. I downloaded it from the given link in the project document from Google.
 The data is organized by months. Every month worth of data is in its own 
 Excel sheet file. There are a total of 12 Excel sheets for 2022.
 
 
-Are there issues with bias or credibility in this data?
+##### Are there issues with bias or credibility in this data?
 
 Data should adhere to the ROCCC principle:
 
-R(Reliable)
+*R(Reliable)*
 
 The data has the information needed to reach the goal of this study.
 
@@ -44,45 +44,41 @@ riders differ from membership riders. Some fields are missing. There lots of bla
 We have to determine how to deal with those blanks. We can inject data there or ignore them or delete these rows. 
 
 
-O(Original)
+*O(Original)*
 
 The data is assumed to be original for the purpose of this study. 
 
-C(Comprehensive)
+*C(Comprehensive)*
 
 The data has all the features that allows us to perform our analysis. However, it has some blanks.
 
-C(Current)
+*C(Current)*
 
 The data is current. We are analyzing the last 12 months of data from Jan 2022 to Dec 2022.
 
-C(Cited)
+*C(Cited)*
 
 The data is cited. It's provided by Motivated International Inc. It's a public data.
 
-How are you addressing licensing, privacy, security, and accessibility?
+##### How are you addressing licensing, privacy, security, and accessibility?
 
-Licensing
+*Licensing*
 
 This is a public data. License is available online.
 
-Privacy
+*Privacy*
 
 The data doesn't contain any personally identifiable information.
 
-security
+*security*
 
 The data will be secure on my personal laptop.
 
-Accessibility
+*Accessibility*
 
 Data is publicly available but i also have it on my laptop.
 
-How did you verify the data integrity?
-
-
-
-
+##### How did you verify the data integrity?
 
 
 This data is assumed to be the whole population of riders in every month. It's not a sample.
@@ -105,17 +101,15 @@ the database based on the details of every ride.
 
 4- Confirmation Bias: This is not issue for raw data. 
 
-
-How does it help you answer your question?
+##### How does it help you answer your question?
 
 By looking at the locations, times, duration of each trip, we can try to see if membership riders have certain preference and we can see how we can provide that to casual members. Still a little unclear to me at this point.
 
-Are there any problems with the data?
+*Are there any problems with the data?*
 
 There are some missing fields. 
 
-
-Case Study Roadmap -Process
+#### Case Study Roadmap -Process
 
 In this step, first thing I tried was to use Excel to clean the data. 
 
