@@ -7,14 +7,14 @@ importance: 1
 category: work
 ---
 
-## **This is a WORK IN PROGRESS- NOT COMPLETE**
+#### **This is a WORK IN PROGRESS- NOT COMPLETE**
 
 ---
 
-### Case Study: How Does a Bike-Share Navigate Speedy Success?
+### **Case Study: How Does a Bike-Share Navigate Speedy Success?**
 
 
-Business task: We are to design a marketing strategy to convert casual bike
+*Business task*: We are to design a marketing strategy to convert casual bike
 riders to annual members.
 
 The finance analysts determined that it's more profitable for the company to
