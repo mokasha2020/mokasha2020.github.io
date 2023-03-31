@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project 1
+title: Rental bikes membership analysis
 description: Google Data Analytics Bike sharing Capstone Project 2023
 img: assets/img/Bike.jpg
 importance: 1
