@@ -191,7 +191,24 @@ str(df_jan22)
 Upon inspecting columns data on each data frame, you can quickly see that  in df_jan22, the started_at and ended_at columns are not in the standard DateTime format (POSIXct format).
 
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/picture_1_R.PNG" title="" class="img-fluid rounded z-depth-1" %}
+</div>
+</div>
+<div class="caption">
+    started_at and ended_at columns are not in the standard DateTime format
+</div>
 
+*Note: for more information on this topic, please read this article [link](https://www.neonscience.org/resources/learning-hub/tutorials/dc-convert-date-time-posix-r#:~:text=POSIXct%20method%20converts%20a%20date%2Dtime%20string%20into%20a%20POSIXct%20class.&text=15%3A00%20MDT%22-,as.,often%20your%20local%20time%20zone.)*
+
+
+Running the 2 lines below, will convert the 2 columns into the needed format.
+
+```{r, echo=FALSE}
+df_jan22$started_at<-as.POSIXct(df_jan22$started_at,format="%m/%d/%Y %H:%M")
+df_jan22$ended_at<-as.POSIXct(df_jan22$ended_at,format="%m/%d/%Y %H:%M")
+```
 
 
 [//]: # To give your project a background in the portfolio page, just add the img tag to the front matter like so:
