@@ -192,7 +192,7 @@ Upon inspecting columns data on each data frame, you can quickly see that  in df
 
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-8">
         {% include figure.html path="assets/img/prof_pic.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     
