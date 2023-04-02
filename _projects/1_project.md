@@ -189,11 +189,10 @@ str(df_jan22)
 ```
 
 Upon inspecting columns data on each data frame, you can quickly see that  in df_jan22, the started_at and ended_at columns are not in the standard DateTime format (POSIXct format).
-
+</div>
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/picture_1_R.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    
+    {% include figure.html path="assets/img/picture_1_R.png" title="example image" class="img-fluid rounded z-depth-1" %}
+</div>
    
 </div>
 <div class="caption">
@@ -208,7 +207,7 @@ Upon inspecting columns data on each data frame, you can quickly see that  in df
 
 Running the 2 lines below, will convert the 2 columns into the needed format.
 
-```
+```{
 df_jan22$started_at<-as.POSIXct(df_jan22$started_at,format="%m/%d/%Y %H:%M")
 df_jan22$ended_at<-as.POSIXct(df_jan22$ended_at,format="%m/%d/%Y %H:%M")
 ```
