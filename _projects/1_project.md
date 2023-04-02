@@ -189,11 +189,16 @@ str(df_jan22)
 ```
 
 Upon inspecting columns data on each data frame, you can quickly see that  in df_jan22, the started_at and ended_at columns are not in the standard DateTime format (POSIXct format).
-</div>
+
+
 <div class="row justify-content-sm-center">
-    {% include figure.html path="assets/img/picture_1_R.png" title="example image" class="img-fluid rounded z-depth-1" %}
-</div>
-   
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/prof_pic.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/picture_1_R.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+
 </div>
 <div class="caption">
     started_at and ended_at columns are not in the standard DateTime format
