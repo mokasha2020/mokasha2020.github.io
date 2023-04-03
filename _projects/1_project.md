@@ -532,4 +532,3 @@ Send a mass email to all casuals with the promotions to sign up.
 * Kaggle RODRIGO LEYVA Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kaggle.com/code/rodrigoleyva2/google-data-analytics-cyclistic-capstone-project#STEP-4:-CONDUCT-DESCRIPTIVE-ANALYSIS)
 * Kelly J Adams Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kellyjadams.com/post/google-capstone-project)
 * ITAMAR Cyclistic Case Study [link](https://www.kaggle.com/code/itamargn/cyclistic-case-study/report)
-
