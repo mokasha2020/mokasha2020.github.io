@@ -544,7 +544,7 @@ In order to get more casual riders to buy a membership my top recommendations ar
 Send a mass email to all casuals with the promotions to sign up.
 
 
-###### **Resources**
+###### **Suggested next steps**
 
 * Redo the project using pandas library in Python.
 * Redo using Bigquery SQL.
