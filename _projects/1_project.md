@@ -501,7 +501,7 @@ cyclistic_df_new %>%
 Here are the 2 Visualizatoins above using interactive Tablue Public Dashboard
 
 <iframe src="https://public.tableau.com/views/Capstoneproject_16794594078290/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true"
- width="955" height="955"></iframe>
+ width="1050" height="1050"></iframe>
 
 *EXPORT SUMMARY FILE FOR FURTHER ANALYSIS*
 
