@@ -504,8 +504,8 @@ Here are the 2 Visualizatoins above using interactive Tablue Public Dashboard
 <div class="row justify-content-sm-center">
     <div class="col-sm-8">
 
-        <iframe src="https://public.tableau.com/views/Capstoneproject_16794594078290/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true"
-        width="500" height="400"></iframe>
+        <p align="center"><iframe src="https://public.tableau.com/views/Capstoneproject_16794594078290/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true"
+        width="750" height="600"></iframe></p>
     </div>    
 
 </div>
