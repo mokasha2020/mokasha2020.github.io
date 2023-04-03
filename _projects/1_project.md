@@ -194,10 +194,7 @@ Upon inspecting columns data on each data frame, you can quickly see that  in df
 <div class="row justify-content-sm-center">
     <div class="col-sm-8">
         {% include figure.html path="assets/img/picture_1_R.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    
-       
-    
+    </div>    
 
 </div>
 <div class="caption">
@@ -292,7 +289,7 @@ Having the data in R dataframe will make it easy to conduct statistical analysis
 
 ##### **Has your data been properly formatted?**
 
-Upon running str(cyclistic_df_new), you can see the data format of every column.
+Yes. Upon running str(cyclistic_df_new), you can see the data format of every column.
 
 Let's conduct descriptive analysis:
 
@@ -321,7 +318,7 @@ cyclistic_df_new %>%
 
 *Note: casual members use bikes for longer time than members according to the mean*
 
-*calculate min ride duration per customer type*
+*calculate mean ride duration per customer type*
 
 ```{r}
  cyclistic_df_new %>%
@@ -330,13 +327,13 @@ cyclistic_df_new %>%
 
 ```
 
-*Note: casual members use bikes for longer time than members according to the max*
+*Note: casual members use bikes for longer time than members according to the mean*
 
 *calculate mode of day of week* 
 
-*we have to create a funcntion to calculate the mode since there is not a built in func*
+*we have to create a function to calculate the mode since there is not a built-in function for the mode in R*
 
-[link](https://www.tutorialspoint.com/r/r_mean_median_mode.htm#)
+For more information about the mode, see this [link](https://www.tutorialspoint.com/r/r_mean_median_mode.htm#)
 
 ``` {r}  
 getmode <- function(v) {
@@ -362,7 +359,7 @@ cyclistic_df_new %>%
 
 ```
 
-*Saturday is for casual and Thursday is for member*
+Saturdays are the days casual riders ride the most and Thursdays are the days member riders ride the most*
 
 *Calculate the average ride_length for users by day_of_week*
 
@@ -374,7 +371,7 @@ cyclistic_df_new %>%
 ```
 
 
-*weekend usage seems to be highest for both type of riders.*
+*Weekend usage seems to be highest for both type of riders.*
 
 *Ride type aggregation 1*
 
@@ -398,7 +395,7 @@ cyclistic_df_new %>%
 *Classic bikes are most widely used followed by electric bikes.*
 *Members and casuals seems to prefer classic bikes.*
 
-*analyze ridership data by type and weekday*
+*Analyze ridership data by type and weekday*
 
 ```{r}
 cyclistic_df_new %>%
@@ -409,7 +406,7 @@ cyclistic_df_new %>%
 
 *Let's visualize the number of rides by rider type*
 
-*Convert day_of_week from charchter to Ordered Factor so we can sort it. Otherwise it will sort alphapatically*
+*Convert day_of_week from charachter to Ordered Factor so we can sort it. Otherwise it will sort alphapatically*
 
 ```{r}
 cyclistic_df_new$day_of_week <- wday(cyclistic_df_new$started_at, label = TRUE)
@@ -422,6 +419,17 @@ cyclistic_df_new %>%
  geom_col(position = "dodge")
 
 ```
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8">
+        {% include figure.html path="assets/img/picture_2_R.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>    
+
+</div>
+<div class="caption">
+    Plot the Day of Week vs the Number of rides by rider type
+</div>
+
 *Members take more rides throughout the week vs casual users*
 
 *Let's create a visualization for average duration*
