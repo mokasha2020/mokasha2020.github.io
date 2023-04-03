@@ -217,7 +217,237 @@ df_jan22$started_at<-as.POSIXct(df_jan22$started_at,format="%m/%d/%Y %H:%M")
 df_jan22$ended_at<-as.POSIXct(df_jan22$ended_at,format="%m/%d/%Y %H:%M")
 ```
 
+Next, we need to combine the data frames into one. We could use rbind() function or the bind_rows() function from dplyr package. The main difference between the two is that if the number of columns aren't the same between the data frames, rbind() function will throw an error while bind_rows() function will work and will combine the data frames marking the extra column(s) as NA in the respective data frame table. For more information, read this short yet illustrative article : [link](https://www.datasciencemadesimple.com/rbind-in-r/)
 
+
+Using rbind()
+
+```{r}
+cyclistic_df <- rbind ( df_jan22, df_feb22)
+```
+
+*Note: I am just showing 2 data frames as an example but you should list all 12 data frames)*
+
+
+
+Create a new column (ride_length) to calculate duration of the ride
+
+Now we need to calculate trip duration for each trip and create a new column called ride_length
+
+```{r}
+cyclistic_df_new$ride_length <- difftime(cyclistic_df_new$ended_at, cyclistic_df_new$started_at, units = "mins")
+```
+
+
+
+Create new columns
+
+
+```{r}
+cyclistic_df_new$date <- as.Date(cyclistic_df_new$started_at)
+cyclistic_df_new$month <- format(as.Date(cyclistic_df_new$date), "%m")
+cyclistic_df_new$day <- format(as.Date(cyclistic_df_new$date), "%d")
+cyclistic_df_new$year <- format(as.Date(cyclistic_df_new$date), "%Y")
+cyclistic_df_new$day_of_week <- format(as.Date(cyclistic_df_new$date), "%A")
+```
+
+
+Remove rows with NA
+
+
+```{r}
+cyclistic_df_new <- na.omit(cyclistic_df_new)
+```
+
+Remove Duplicate rows
+
+```{r}
+cyclistic_df_new <- distinct(cyclistic_df_new)
+```
+
+
+
+Remove rows where ride length is 0 or negative
+
+```{r}
+cyclistic_df_new <- cyclistic_df_new[!(cyclistic_df_new$ride_length <=0),]
+```
+
+Remove unnecessary columns
+
+```{r}
+cyclistic_df_new <- cyclistic_df_new %>%  #remove columns not needed: ride_id, start_station_id, end_station_id, start_lat, start_long, end_lat, end_lng
+  select(-c(ride_id, start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)) 
+```
+
+## Case Study Roadmap -Analyze
+
+
+Here are some guiding questions from the capstone project document
+
+*How should you organize your data to perform analysis on it?*
+
+The data is organized as a data frame in R. 
+
+We currently have 12 columns and 4,367,646 rows. 
+
+Having the data in R dataframe will make it easy to conduct statistical analysis.
+
+*Has your data been properly formatted?*
+
+Upon running str(cyclistic_df_new), you can see the data format of every column.
+
+Let's conduct descriptive analysis:
+
+
+*Calculate Total rides*
+
+```{r}
+nrow(cyclistic_df_new) : 4367646
+```
+
+*calculate total ride duration per customer type*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(member_casual)%>%
+ count(member_casual)
+```
+
+*calculate average ride duration per customer type*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(member_casual)%>%
+ summarise(mean_ride_length= mean(ride_length))
+```
+
+*Note: casual members use bikes for longer time than members according to the mean*
+
+*calculate min ride duration per customer type*
+
+```{r}
+ cyclistic_df_new %>%
+ group_by(member_casual)%>%
+ summarise(mean(ride_length))
+
+```
+
+*Note: casual members use bikes for longer time than members according to the max*
+
+*calculate mode of day of week* 
+
+*we have to create a funcntion to calculate the mode since there is not a built in func*
+
+[link](https://www.tutorialspoint.com/r/r_mean_median_mode.htm#)
+
+``` {r}  
+getmode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
+result <- getmode(cyclistic_df_new$day_of_week)
+
+print(result)
+
+```
+
+*Saturday is the day bikes are used the most.*
+
+
+*If we try to break it down by customer type:*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(member_casual)%>%
+ summarise(getmode(day_of_week))
+
+```
+
+*Saturday is for casual and Thursday is for member*
+
+*Calculate the average ride_length for users by day_of_week*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(member_casual, day_of_week)%>%
+ summarise(mean(ride_length))
+
+```
+
+
+*weekend usage seems to be highest for both type of riders.*
+
+*Ride type aggregation 1*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(rideable_type, member_casual)%>%
+ count(rideable_type)
+```
+
+
+*Ride type aggregation 2*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(rideable_type)%>%
+ count(rideable_type)
+```
+
+
+*So we can see that member bikes never used docked bikes in 2022.* 
+*Classic bikes are most widely used followed by electric bikes.*
+*Members and casuals seems to prefer classic bikes.*
+
+*analyze ridership data by type and weekday*
+
+```{r}
+cyclistic_df_new %>%
+ group_by(member_casual, day_of_week)%>%
+ summarise(number_of_rides = n(),average_duration = mean(ride_length)) %>%
+ arrange(member_casual,day_of_week )
+```
+
+*Let's visualize the number of rides by rider type*
+
+*Convert day_of_week from charchter to Ordered Factor so we can sort it. Otherwise it will sort alphapatically*
+
+```{r}
+cyclistic_df_new$day_of_week <- wday(cyclistic_df_new$started_at, label = TRUE)
+
+cyclistic_df_new %>% 
+ group_by(member_casual, day_of_week)%>%
+ summarise(number_of_rides = n(),average_duration = mean(ride_length)) %>%
+ arrange(member_casual,day_of_week) %>%
+ ggplot(aes(x=day_of_week, y = number_of_rides, fill = member_casual))+
+ geom_col(position = "dodge")
+
+```
+*Members take more rides throughout the week vs casual users*
+
+*Let's create a visualization for average duration*
+
+```{r}
+cyclistic_df_new %>% 
+ group_by(member_casual, day_of_week)%>%
+ summarise(number_of_rides = n(),average_duration = mean(ride_length)) %>%
+ arrange(member_casual,day_of_week) %>%
+ ggplot(aes(x=day_of_week, y = average_duration, fill = member_casual))+
+ geom_col(position = "dodge")
+
+```
+
+*Casual riders take less trips/rides but for longer durations of time vs members*
+
+
+*EXPORT SUMMARY FILE FOR FURTHER ANALYSIS*
+
+```{r}
+counts <- aggregate(cyclistic_df_new$ride_length ~ cyclistic_df_new$member_casual + cyclistic_df_new$day_of_week, FUN = mean)
+```
+write.csv(counts, file = 'avg_ride_length.csv')
 
 
 [//]: # To give your project a background in the portfolio page, just add the img tag to the front matter like so:
@@ -257,33 +487,33 @@ df_jan22$ended_at<-as.POSIXct(df_jan22$ended_at,format="%m/%d/%Y %H:%M")
 [//]: # You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+[//]: # <div class="row justify-content-sm-center">
+[//]: #    <div class="col-sm-8 mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: #    <div class="col-sm-4 mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: # </div>
+[//]: # <div class="caption">
+[//]: #     You can also have artistically styled 2/3 + 1/3 images, like these.
+[//]: # </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+[//]: # The code is simple.
+[//]: # Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
+[//]: # To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
+[//]: # Here's the code for the last row of images above:
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+[//]: # {% raw %}
+[//]: # ```html
+[//]: # <div class="row justify-content-sm-center">
+[//]: #     <div class="col-sm-8 mt-3 mt-md-0">
+[//]: #         {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #     </div>
+[//]: #     <div class="col-sm-4 mt-3 mt-md-0">
+[//]: #        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+[//]: #    </div>
+[//]: #</div>
+[//]: # ```
+[//]: # {% endraw %}
