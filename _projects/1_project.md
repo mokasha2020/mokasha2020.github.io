@@ -10,7 +10,7 @@ category: work
 
 ---
 
-#### **Case Study: How Does a Bike-Share Navigate Speedy Success?**
+#### Case Study: How Does a Bike-Share Navigate Speedy Success?
 
 
 **Business task**: We are to design a marketing strategy to convert casual bike
@@ -63,7 +63,7 @@ The data is current. We are analyzing the last 12 months of data from Jan 2022 t
 
 The data is cited. It's provided by Motivated International Inc. It's a public data.
 
-##### **How are you addressing licensing, privacy, security, and accessibility?**
+###### **How are you addressing licensing, privacy, security, and accessibility?**
 
 *Licensing*
 
@@ -81,7 +81,7 @@ The data will be secure on my personal laptop.
 
 Data is publicly available but i also have it on my laptop.
 
-##### **How did you verify the data integrity?**
+###### **How did you verify the data integrity?**
 
 
 This data is assumed to be the whole population of riders in every month. It's not a sample.
@@ -104,7 +104,7 @@ the database based on the details of every ride.
 
 4- Confirmation Bias: This is not issue for raw data. 
 
-##### **How does it help you answer your question?**
+###### **How does it help you answer your question?**
 
 By looking at the locations, times, duration of each trip, we can try to see if membership riders have certain preference and we can see how we can provide that to casual members. Still a little unclear to me at this point.
 
@@ -278,7 +278,7 @@ cyclistic_df_new <- cyclistic_df_new %>%  #remove columns not needed: ride_id, s
 
 Here are some guiding questions from the capstone project document
 
-##### **How should you organize your data to perform analysis on it?**
+###### **How should you organize your data to perform analysis on it?**
 
 The data is organized as a data frame in R. 
 
@@ -286,7 +286,7 @@ We currently have 12 columns and 4,367,646 rows.
 
 Having the data in R dataframe will make it easy to conduct statistical analysis.
 
-##### **Has your data been properly formatted?**
+###### **Has your data been properly formatted?**
 
 Yes. Upon running str(cyclistic_df_new), you can see the data format of every column.
 
@@ -405,11 +405,11 @@ cyclistic_df_new %>%
 
 Here are some guiding questions from the capstone project document
 
-##### **Were you able to answer the question of how annual members and casual riders use Cyclistic bikes differently?**
+###### **Were you able to answer the question of how annual members and casual riders use Cyclistic bikes differently?**
 
 Yes, we should that both types of memberships use the bikes differently.
 
-##### **What story does your data tell?**
+###### **What story does your data tell?**
 
 The data we saw so far tells that riders differ in their behaviour based on the membership types and that it's possible to create a campaign to 
 influence casual riders to become members.
@@ -425,21 +425,21 @@ Members and casual riders show different usage patterns in how they use the bike
 * Classic bikes are most widely used followed by electric bikes
 
 
-##### **How do your findings relate to your original question?**
+###### **How do your findings relate to your original question?**
 
 The original question was about how to influence the casual rider to become a member. Looking at the analaysis above, we were able
 to draw some conclusions about the usage behaviour of both types of riders and therefore we can come up with recommendations on how to achieve the goal of this study.
 
-##### **Who is your audience? What is the best way to communicate with them?**
+###### **Who is your audience? What is the best way to communicate with them?**
 
 Lily Moreno and Cyclistic are internal and external audience. The best way to communicate the findings is to draft a presentation that summrizes
 the study with visualizations.
 
-##### **Can data visualization help you share your findings?**
+###### **Can data visualization help you share your findings?**
 
 Yes.
 
-##### **Is your presentation accessible to your audience?**
+###### **Is your presentation accessible to your audience?**
 
 Yes.
 
@@ -531,7 +531,7 @@ write.csv(counts, file = 'avg_ride_length.csv')
 
 Here are some guiding questions from the capstone project document
 
-##### **What is your final conclusion based on your analysis?**
+###### **What is your final conclusion based on your analysis?**
 
 In order to get more casual riders to buy a membership my top recommendations are:
 
@@ -539,14 +539,18 @@ In order to get more casual riders to buy a membership my top recommendations ar
 * Give discounts/promotions on Saturdays when you have a membership.
 * Longer rides can get some type of rewards program when they become members.
 
-##### **How could your team and business apply your insights?**
+###### **How could your team and business apply your insights?**
 
 Send a mass email to all casuals with the promotions to sign up.
 
 
+###### **Resources**
 
+* Redo the project using pandas library in Python.
+* Redo using Bigquery SQL.
+* Create move Viz using Tablue.
 
-##### **Resources**
+###### **Resources**
 
 * Kaggle RODRIGO LEYVA Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kaggle.com/code/rodrigoleyva2/google-data-analytics-cyclistic-capstone-project#STEP-4:-CONDUCT-DESCRIPTIVE-ANALYSIS)
 * Kelly J Adams Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kellyjadams.com/post/google-capstone-project)
