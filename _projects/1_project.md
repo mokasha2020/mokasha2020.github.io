@@ -533,5 +533,6 @@ Send a mass email to all casuals with the promotions to sign up.
 * Kelly J Adams Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kellyjadams.com/post/google-capstone-project)
 * ITAMAR Cyclistic Case Study [link](https://www.kaggle.com/code/itamargn/cyclistic-case-study/report)
 
-<iframe src="https://public.tableau.com/views/public_exercise/Dashboard1?:showVizHome=no&:embed=true"
+<iframe src="https://public.tableau.com/views/Capstoneproject_16794594078290/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link:showVizHome=no&:embed=true"
+
  width="645" height="955"></iframe>
