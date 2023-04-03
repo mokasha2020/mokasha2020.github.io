@@ -223,14 +223,11 @@ Next, we need to combine the data frames into one. We could use rbind() function
 Using rbind()
 
 ```{r}
-cyclistic_df <- rbind ( df_jan22, df_feb22)
+cyclistic_df <- rbind ( df_jan22, df_feb22, df_mar22, 
+				df_apr22, df_may22, df_jun22, df_jul22,
+				df_aug22, df_sep22, df_oct22, df_nov22, df_dec22)
 ```
 
-*Note: I am just showing 2 data frames as an example but you should list all 12 data frames)*
-
-
-
-Create a new column (ride_length) to calculate duration of the ride
 
 Now we need to calculate trip duration for each trip and create a new column called ride_length
 
@@ -240,7 +237,7 @@ cyclistic_df_new$ride_length <- difftime(cyclistic_df_new$ended_at, cyclistic_df
 
 
 
-Create new columns
+Create new columns for further analysis on bike usage during
 
 
 ```{r}
@@ -280,12 +277,12 @@ cyclistic_df_new <- cyclistic_df_new %>%  #remove columns not needed: ride_id, s
   select(-c(ride_id, start_station_id, end_station_id,start_lat,start_lng,end_lat,end_lng)) 
 ```
 
-## Case Study Roadmap -Analyze
+> #### **Case Study Roadmap -Analyze**
 
 
 Here are some guiding questions from the capstone project document
 
-*How should you organize your data to perform analysis on it?*
+##### **How should you organize your data to perform analysis on it?**
 
 The data is organized as a data frame in R. 
 
@@ -293,7 +290,7 @@ We currently have 12 columns and 4,367,646 rows.
 
 Having the data in R dataframe will make it easy to conduct statistical analysis.
 
-*Has your data been properly formatted?*
+##### **Has your data been properly formatted?**
 
 Upon running str(cyclistic_df_new), you can see the data format of every column.
 
