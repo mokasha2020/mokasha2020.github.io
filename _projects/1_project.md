@@ -327,8 +327,6 @@ cyclistic_df_new %>%
 
 ```
 
-*Note: casual members use bikes for longer time than members according to the mean*
-
 *calculate mode of day of week* 
 
 *we have to create a function to calculate the mode since there is not a built-in function for the mode in R*
@@ -347,7 +345,7 @@ print(result)
 
 ```
 
-*Saturday is the day bikes are used the most.*
+*Saturday is the day bikes are used the most*
 
 
 *If we try to break it down by customer type:*
@@ -359,7 +357,7 @@ cyclistic_df_new %>%
 
 ```
 
-Saturdays are the days casual riders ride the most and Thursdays are the days member riders ride the most*
+*Saturdays are the days casual riders ride the most and Thursdays are the days member riders ride the most*
 
 *Calculate the average ride_length for users by day_of_week*
 
@@ -404,6 +402,51 @@ cyclistic_df_new %>%
  arrange(member_casual,day_of_week )
 ```
 
+> #### **Case Study Roadmap -Share**
+
+Here are some guiding questions from the capstone project document
+
+##### **Were you able to answer the question of how annual members and casual riders use Cyclistic bikes differently?**
+
+Yes, we should that both types of memberships use the bikes differently.
+
+##### **What story does your data tell?**
+
+The data we saw so far tells that riders differ in their behaviour based on the membership types and that it's possible to create a campaign to 
+influence casual riders to become members.
+
+Members and casual riders show different usage patterns in how they use the bikes. From the findings above we took note of the following:
+
+* Members take more rides throughout the week vs casual users
+* Saturdays are the days casual riders ride the most and Thursdays are the days member riders ride the most
+* Casual riders take less trips/rides but for longer durations of time vs members
+* Casual members use bikes for longer time than members according to the mean duration value
+* Member bikes never used docked bikes in 2022
+* Members and casuals seems to prefer classic bikes
+* Classic bikes are most widely used followed by electric bikes
+
+
+##### **How do your findings relate to your original question?**
+
+The original question was about how to influence the casual rider to become a member. Looking at the analaysis above, we were able
+to draw some conclusions about the usage behaviour of both types of riders and therefore we can come up with recommendations on how to achieve the goal of this study.
+
+##### **Who is your audience? What is the best way to communicate with them?**
+
+Lily Moreno and Cyclistic are internal and external audience. The best way to communicate the findings is to draft a presentation that summrizes
+the study with visualizations.
+
+##### **Can data visualization help you share your findings?**
+
+Yes.
+
+##### **Is your presentation accessible to your audience?**
+
+Yes.
+
+
+
+
 *Let's visualize the number of rides by rider type*
 
 *Convert day_of_week from charachter to Ordered Factor so we can sort it. Otherwise it will sort alphapatically*
@@ -443,6 +486,16 @@ cyclistic_df_new %>%
  geom_col(position = "dodge")
 
 ```
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8">
+        {% include figure.html path="assets/img/picture_3_R.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>    
+
+</div>
+<div class="caption">
+    Plot the Day of Week vs Average Duration by rider type
+</div>
+
 
 *Casual riders take less trips/rides but for longer durations of time vs members*
 
@@ -453,3 +506,32 @@ cyclistic_df_new %>%
 counts <- aggregate(cyclistic_df_new$ride_length ~ cyclistic_df_new$member_casual + cyclistic_df_new$day_of_week, FUN = mean)
 write.csv(counts, file = 'avg_ride_length.csv')
 ```
+
+
+
+> #### **Case Study Roadmap -Act**
+
+Here are some guiding questions from the capstone project document
+
+##### **What is your final conclusion based on your analysis?**
+
+In order to get more casual riders to buy a membership my top recommendations are:
+
+* Give discounts/promotions for longer rides when you have a membership.
+* Give discounts/promotions on Saturdays when you have a membership.
+* Longer rides can get some type of rewards program when they become members.
+
+##### **How could your team and business apply your insights?**
+
+Send a mass email to all casuals with the promotions to sign up.
+
+
+
+
+##### **Resources**
+
+Kaggle RODRIGO LEYVA Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kaggle.com/code/rodrigoleyva2/google-data-analytics-cyclistic-capstone-project#STEP-4:-CONDUCT-DESCRIPTIVE-ANALYSIS)
+kelly J Adams Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kellyjadams.com/post/google-capstone-project)
+ITAMAR Cyclistic Case Study [link](https://www.kaggle.com/code/itamargn/cyclistic-case-study/report)
+
+
