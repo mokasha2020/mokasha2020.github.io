@@ -510,7 +510,7 @@ Here are the 2 Visualizatoins above using interactive Tablue Public Dashboard
 
 </div>
 <div class="caption">
-    Tablue Public Dashboard
+    Interactive Tablue Public Dashboard for the 2 plots shown above
 </div>
 
 
@@ -548,9 +548,9 @@ Send a mass email to all casuals with the promotions to sign up.
 
 * Redo the project using pandas library in Python.
 * Redo using Bigquery SQL.
-* Create move Viz using Tablue.
+* Create more Viz using Tablue.
 
-###### **Resources**
+###### **References**
 
 * Kaggle RODRIGO LEYVA Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kaggle.com/code/rodrigoleyva2/google-data-analytics-cyclistic-capstone-project#STEP-4:-CONDUCT-DESCRIPTIVE-ANALYSIS)
 * Kelly J Adams Google Data Analytics (Cyclistic) Capstone Project [link](https://www.kellyjadams.com/post/google-capstone-project)
