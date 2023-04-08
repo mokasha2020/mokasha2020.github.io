@@ -35,7 +35,7 @@ I have Bachelors and Masters degrees in Engineering.
 
 I am also skilled in Project Management and Engineering Management. 
 
-I'm currently looking for a Software role with focus on AI/Machine Learning/Data Analysis. I have skills analyzing and cleaning data using SQL, R scripting, along with creating data visualizations in Tableau.
+I have skills in AI/Machine Learning and cleaning data using SQL, R scripting, along with creating data visualizations in Tableau.
 
 I am also working on Machine Learning projects utilizing Tensorflow and Python.
 
@@ -46,3 +46,5 @@ I have recently completed Machine Learning Specialization from DeepLearning.AI /
 * Machine Learning Applications using Python.
 
 * Data Science and SQL.
+
+* Ignition SCADA.

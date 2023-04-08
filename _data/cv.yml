@@ -123,6 +123,10 @@
 - title: Certifications and Courses
   type: time_table
   contents:
+
+  - year: Ongoing
+      items: 
+        - ·	Ignition SCADA credential from Inductive Automation 
     - year: 2023
       items: 
         - Google Data Analytics Professional Certificate 
