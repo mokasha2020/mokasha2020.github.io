@@ -33,11 +33,11 @@ safety systems, control panel design using CAD software packages.
 
 I have Bachelors and Masters degrees in Engineering. 
 
-I am also skilled in Project Management and Engineering Management. 
-
 I have skills in AI/Machine Learning and cleaning data using SQL, R scripting, along with creating data visualizations in Tableau.
 
-I am also working on Machine Learning projects utilizing Tensorflow and Python.
+I am working on Machine Learning projects utilizing Tensorflow and Python.
+
+I am also skilled in Project Management and Engineering Management. 
 
 I have recently completed Machine Learning Specialization from DeepLearning.AI / Stanford University and Google Data Analytics Certification. ​
 
