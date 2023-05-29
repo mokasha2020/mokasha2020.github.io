@@ -1,6 +1,6 @@
 ---
 layout: page 
-permalink: /blog
+permalink: /blog/20200823
 title: xxx 
 description: yyy 
 nav: true 
