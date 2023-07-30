@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Boston Housing Market
-description: Boston Housing Market prediction ML deployment Project 2023
+description: Boston Housing Market ML deployment Project 2023
 img: assets/img/boston.jpg
 importance: 2
 category: work
