@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\_data",
+    "\\.github",
+    "\\bin",
+    "\\blog",
     "\\_includes",
+    "\\_layouts",
     "\\_pages",
+    "\\_posts",
     "\\_projects"
   ],
-  "SelectedNode": "\\_pages\\about.md",
+  "SelectedNode": "\\_includes\\header.html",
   "PreviewInSolutionExplorer": false
 }
