@@ -1,15 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
+    "\\assets\\img",
     "\\bin",
     "\\blog",
-    "\\_includes",
-    "\\_layouts",
-    "\\_pages",
-    "\\_posts",
-    "\\_projects"
+    "\\_pages"
   ],
-  "SelectedNode": "\\_includes\\header.html",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
