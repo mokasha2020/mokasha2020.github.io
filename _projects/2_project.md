@@ -10,9 +10,11 @@ category: work
 
 ---
 
-## Case Study: How to create a Machine Learning model and deploy it to production using Dockers, Postman, Github Actions and Heroku?
+## Case Study:
 
-This is a project walk thru that I implmented for my own practice. Reference:[Github](https://github.com/krishnaik06/bostonhousepricing)
+### How to create a Machine Learning model and deploy it to production using Dockers, Postman, Github Actions and Heroku?
+
+This is a project walk thru that I implmented for my own practice. Reference: [Github](https://github.com/krishnaik06/bostonhousepricing)
 
 You can access the entire code on my repository: [My Project repo](https://github.com/mokasha2020/bostonhousepricing)
 
